@@ -38,7 +38,12 @@
 
   function loadSiteContent() {
     if (!siteContentPromise) {
-      siteContentPromise = fetch("/data/site-content.json", { headers: JSON_HEADERS })
+      siteContentPromise = fetch("/api/portfolio?t=" + Date.now(), { headers: JSON_HEADERS })
+        .then((response) => {
+          if (!response.ok) throw new Error("API failed");
+          return response.json();
+        })
+        .catch(() => fetch("/data/site-content.json", { headers: JSON_HEADERS }))
         .then((response) => {
           if (!response.ok) {
             throw new Error("Failed to load site content.");
