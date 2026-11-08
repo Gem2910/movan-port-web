@@ -1,0 +1,46 @@
+/* ============================================================
+   MOVAN STUDIO — BASE
+   Global element defaults, body background, noise overlay
+   ============================================================ */
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  
+}
+
+
+
+
+
+/* Noise texture overlay */
+.noise {
+  display: none !important;
+}
+
+/* All interactive elements */
+a,
+button {
+  transition:
+    color var(--dur-fast) var(--ease-out),
+    opacity var(--dur-fast) var(--ease-out),
+    transform var(--dur-base) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out),
+    background-color var(--dur-fast) var(--ease-out);
+}
+
+/* Focus visible — accessibility */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--color-border-strong);
+}
+
+/* Accessibility Focus */
+*:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}

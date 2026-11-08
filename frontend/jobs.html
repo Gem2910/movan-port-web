@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <base target="_top">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Movan Jobs Pro - Cổng Tuyển Dụng & Việc Làm Thời Gian Thực</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #090D16;
+      --card-bg: rgba(22, 30, 46, 0.7);
+      --card-hover: rgba(30, 41, 59, 0.9);
+      --border: rgba(255, 255, 255, 0.08);
+      --border-focus: rgba(56, 189, 248, 0.4);
+      --accent: #38BDF8;
+      --accent-glow: rgba(56, 189, 248, 0.25);
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+      --success: #10B981;
+      --warning: #F59E0B;
+      --danger: #EF4444;
+      --purple: #A855F7;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(168, 85, 247, 0.08) 0%, transparent 40%);
+      background-attachment: fixed;
+    }
+
+    /* Header Nav */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(20px);
+      background: rgba(9, 13, 22, 0.85);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #0284C7, #38BDF8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px var(--accent-glow);
+    }
+
+    .brand-logo svg {
+      width: 22px;
+      height: 22px;
+      fill: #FFF;
+    }
+
+    .brand-name h1 {
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      color: #FFF;
+      line-height: 1.2;
+    }
+
+    .brand-name span {
+      font-size: 11px;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .header-pills {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      color: #34D399;
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 5px 10px;
+      border-radius: 20px;
+    }
+
+    .live-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--success);
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 16px 20px 80px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    /* Disclaimer Card */
+    .disclaimer-card {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(245, 158, 11, 0.04));
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      border-radius: 14px;
+      padding: 14px 18px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .disclaimer-icon {
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .disclaimer-content {
+      font-size: 12.5px;
+      line-height: 1.5;
+      color: #FDE68A;
+    }
+
+    /* Top Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+
+    .stat-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .stat-label {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+
+    .stat-val {
+      font-size: 22px;
+      font-weight: 800;
+      color: #FFF;
+    }
+
+    /* Control Panel */
+    .panel {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .search-row {
+      position: relative;
+    }
+
+    .search-row input {
+      width: 100%;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid var(--border);
+      padding: 13px 18px 13px 44px;
+      border-radius: 12px;
+      color: #FFF;
+      font-size: 14px;
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    .search-row input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+    }
+
+    .search-row svg {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      color: var(--text-muted);
+    }
+
+    /* Category Pill Selector */
+    .category-scroll {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+    }
+
+    .category-scroll::-webkit-scrollbar { display: none; }
+
+    .cat-btn {
+      flex-shrink: 0;
+      padding: 8px 16px;
+      border-radius: 24px;
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .cat-btn.active {
+      background: var(--accent);
+      color: #0B0F19;
+      border-color: var(--accent);
+      box-shadow: 0 4px 12px var(--accent-glow);
+      font-weight: 700;
+    }
+
+    /* Job Card Grid */
+    .job-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 16px;
+    }
+
+    .job-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      backdrop-filter: blur(10px);
+      transition: all 0.2s;
+    }
+
+    .job-card:hover {
+      transform: translateY(-3px);
+      background: var(--card-hover);
+      border-color: var(--border-focus);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4);
+    }
+
+    .card-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .badge-cat {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: rgba(56, 189, 248, 0.12);
+      color: #38BDF8;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+
+    .badge-status {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+
+    .status-open {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34D399;
+    }
+
+    .status-filled {
+      background: rgba(245, 158, 11, 0.15);
+      color: #FBBF24;
+    }
+
+    .status-expired {
+      background: rgba(239, 68, 68, 0.15);
+      color: #F87171;
+    }
+
+    .job-title {
+      font-size: 15.5px;
+      font-weight: 700;
+      color: #FFF;
+      line-height: 1.4;
+    }
+
+    .job-meta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      font-size: 12px;
+      color: var(--text-muted);
+      background: rgba(15, 23, 42, 0.4);
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.03);
+    }
+
+    .meta-col {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .meta-col span {
+      font-size: 10.5px;
+      color: #64748B;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .meta-col strong {
+      color: #E2E8F0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .salary-val {
+      color: #34D399 !important;
+      font-weight: 700 !important;
+    }
+
+    /* Comment Box */
+    .comment-strip {
+      background: rgba(15, 23, 42, 0.6);
+      border-left: 3px solid #38BDF8;
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 11.5px;
+      color: #CBD5E1;
+      line-height: 1.4;
+      font-style: italic;
+    }
+
+    .card-footer {
+      margin-top: auto;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .source-text {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .btn-apply {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(135deg, #0284C7, #0EA5E9);
+      color: #FFF;
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-size: 12.5px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+      transition: all 0.2s;
+    }
+
+    .btn-apply:hover {
+      filter: brightness(1.15);
+      transform: scale(1.02);
+    }
+
+    /* Loading Spinner */
+    .loading-view {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-muted);
+      grid-column: 1 / -1;
+    }
+
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid rgba(56, 189, 248, 0.2);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 0 auto 16px auto;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="#" class="brand">
+      <div class="brand-logo">
+        <svg viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+      </div>
+      <div class="brand-name">
+        <h1>MOVAN JOBS APP</h1>
+        <span>Cổng Việc Làm Freelance & Remote</span>
+      </div>
+    </a>
+    <div class="header-pills">
+      <div class="live-badge">
+        <div class="live-dot"></div>
+        <span>LIVE SHEET</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Container -->
+  <div class="container">
+    
+    <!-- Disclaimer Banner -->
+    <div class="disclaimer-card">
+      <div class="disclaimer-icon">⚠️</div>
+      <div class="disclaimer-content">
+        <strong>Miễn trừ trách nhiệm:</strong> Đây là hệ thống tổng hợp link việc làm thời gian thực từ Google Sheet. Thông tin chỉ dừng lại ở mức tham khảo, người tìm việc cần chủ động xác thực kỹ và tuyệt đối không nạp tiền hay đặt cọc trước khi nhận việc!
+      </div>
+    </div>
+
+    <!-- Top KPI Dashboard -->
+    <div class="stats-grid">
+      <div class="stat-box">
+        <div class="stat-label">Tổng Công Việc</div>
+        <div class="stat-val" id="kpiTotal">...</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Đang Mở Ứng Tuyển</div>
+        <div class="stat-val" style="color: #34D399;" id="kpiOpen">...</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Đã Tuyển Đủ</div>
+        <div class="stat-val" style="color: #FBBF24;" id="kpiFilled">...</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Độ Tin Cậy Trung Bình</div>
+        <div class="stat-val" style="color: #38BDF8;">4.6 ★</div>
+      </div>
+    </div>
+
+    <!-- Controls Panel -->
+    <div class="panel">
+      <div class="search-row">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        <input type="text" id="searchInput" placeholder="Tìm kiếm nhanh vị trí, kỹ năng, công ty tuyển dụng...">
+      </div>
+
+      <div class="category-scroll" id="catBar">
+        <div class="cat-btn active" data-cat="all">Tất Cả Ngành</div>
+        <div class="cat-btn" data-cat="Thiết Kế Đồ Họa">🎨 Thiết Kế</div>
+        <div class="cat-btn" data-cat="Video & Motion">🎬 Video & Motion</div>
+        <div class="cat-btn" data-cat="Lập Trình & IT">💻 Lập Trình & IT</div>
+        <div class="cat-btn" data-cat="Marketing & Ads">📣 Marketing</div>
+        <div class="cat-btn" data-cat="Viết Lách & Content">📝 Viết Lách</div>
+        <div class="cat-btn" data-cat="Kinh Doanh & Sale">💼 Kinh Doanh</div>
+        <div class="cat-btn" data-cat="HR & Tuyển Dụng">👥 HR</div>
+        <div class="cat-btn" data-cat="AI & Dữ Liệu">🤖 AI & Data</div>
+        <div class="cat-btn" data-cat="Trang Khác">🌐 Khác</div>
+      </div>
+    </div>
+
+    <!-- Job Feed Grid -->
+    <div class="job-grid" id="jobGrid">
+      <div class="loading-view">
+        <div class="spinner"></div>
+        <p>Đang đọc và đồng bộ việc làm từ Google Sheet...</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    var allJobs = [];
+    var activeCategory = 'all';
+
+    function loadData() {
+      google.script.run
+        .withSuccessHandler(function(jobs) {
+          allJobs = jobs || [];
+          updateKPIs();
+          render();
+        })
+        .withFailureHandler(function(err) {
+          document.getElementById('jobGrid').innerHTML = '<div class="loading-view" style="color:#EF4444;">Không thể tải dữ liệu: ' + err.message + '</div>';
+        })
+        .getJobsData();
+    }
+
+    function updateKPIs() {
+      var total = allJobs.length;
+      var open = 0;
+      var filled = 0;
+      for (var i = 0; i < total; i++) {
+        var s = allJobs[i].status || '';
+        if (s.indexOf('ĐÃ ĐỦ') !== -1) filled++;
+        else open++;
+      }
+      document.getElementById('kpiTotal').textContent = total;
+      document.getElementById('kpiOpen').textContent = open;
+      document.getElementById('kpiFilled').textContent = filled;
+    }
+
+    function render() {
+      var grid = document.getElementById('jobGrid');
+      var kw = document.getElementById('searchInput').value.toLowerCase().trim();
+
+      var filtered = allJobs.filter(function(j) {
+        var matchCat = (activeCategory === 'all') || (j.category && j.category.indexOf(activeCategory) !== -1);
+        var matchKw = !kw || (
+          (j.title && j.title.toLowerCase().indexOf(kw) !== -1) ||
+          (j.company && j.company.toLowerCase().indexOf(kw) !== -1) ||
+          (j.salary && j.salary.toLowerCase().indexOf(kw) !== -1) ||
+          (j.source && j.source.toLowerCase().indexOf(kw) !== -1)
+        );
+        return matchCat && matchKw;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '<div class="loading-view"><p>Không tìm thấy công việc phù hợp với bộ lọc hiện tại.</p></div>';
+        return;
+      }
+
+      var html = '';
+      for (var i = 0; i < filtered.length; i++) {
+        var j = filtered[i];
+        var isFilled = j.status && j.status.indexOf('ĐÃ ĐỦ') !== -1;
+        var isExpired = j.status && j.status.indexOf('HẾT HẠN') !== -1;
+        var statusClass = isFilled ? 'badge-status status-filled' : (isExpired ? 'badge-status status-expired' : 'badge-status status-open');
+        var trackingUrl = 'https://movan.id.vn/r/job?url=' + encodeURIComponent(j.link || '#') + '&cat=' + encodeURIComponent(j.category || 'Khác') + '&id=' + encodeURIComponent(j.id || 'job');
+
+        html += '<div class="job-card">' +
+          '<div class="card-head">' +
+            '<span class="badge-cat">' + escapeHtml(j.category || 'Freelance') + '</span>' +
+            '<span class="' + statusClass + '">' + escapeHtml(j.status || '🟢 ĐANG TUYỂN') + '</span>' +
+          '</div>' +
+
+          '<div class="job-title">' + escapeHtml(j.title || '') + '</div>' +
+
+          '<div class="job-meta-grid">' +
+            '<div class="meta-col"><span>Doanh nghiệp</span><strong>' + escapeHtml(j.company || 'Doanh nghiệp') + '</strong></div>' +
+            '<div class="meta-col"><span>Hình thức</span><strong>' + escapeHtml(j.type || 'Remote') + '</strong></div>' +
+            '<div class="meta-col"><span>Mức lương</span><strong class="salary-val">' + escapeHtml(j.salary || 'Thỏa thuận') + '</strong></div>' +
+            '<div class="meta-col"><span>Độ tin cậy</span><strong>' + escapeHtml(j.reliability || '70%') + '</strong></div>' +
+          '</div>' +
+
+          (j.note && j.note.indexOf('Chưa có') === -1 ? 
+            '<div class="comment-strip">💬 <strong>Bình luận MXH:</strong> ' + escapeHtml(j.note) + '</div>' : '') +
+
+          '<div class="card-footer">' +
+            '<div class="source-text">📍 ' + escapeHtml(j.source || 'Mạng xã hội') + ' • ' + escapeHtml(j.time || 'Vừa xong') + '</div>' +
+            '<a href="' + trackingUrl + '" target="_blank" class="btn-apply">' +
+              'Ứng Tuyển' +
+              '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>' +
+            '</a>' +
+          '</div>' +
+        '</div>';
+      }
+
+      grid.innerHTML = html;
+    }
+
+    function escapeHtml(str) {
+      return String(str).replace(/[&<>"']/g, function(m) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m];
+      });
+    }
+
+    // Category Buttons Event
+    document.querySelectorAll('.cat-btn').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        document.querySelectorAll('.cat-btn').forEach(function(b) { b.classList.remove('active'); });
+        e.currentTarget.classList.add('active');
+        activeCategory = e.currentTarget.getAttribute('data-cat');
+        render();
+      });
+    });
+
+    // Search Input Event
+    document.getElementById('searchInput').addEventListener('input', render);
+
+    // Kích hoạt nạp dữ liệu từ Google Sheet
+    loadData();
+  </script>
+</body>
+</html>

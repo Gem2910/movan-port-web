@@ -1,0 +1,105 @@
+/* ============================================================
+   MOVAN STUDIO — MOTION
+   Animation keyframes and entrance utility classes.
+   Uses Intersection Observer via motion.js.
+   Only animate transform + opacity.
+   Respects prefers-reduced-motion (handled in reset.css).
+   ============================================================ */
+
+/* ── Keyframes ──────────────────────────────────────────────── */
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ── Initial hidden state (before JS triggers) ──────────────── */
+
+.anim-ready {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity var(--dur-slower) var(--ease-out),
+    transform var(--dur-slower) var(--ease-out);
+}
+
+.anim-ready.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays for children */
+.stagger > *:nth-child(1)  { transition-delay: 0ms; }
+.stagger > *:nth-child(2)  { transition-delay: 80ms; }
+.stagger > *:nth-child(3)  { transition-delay: 160ms; }
+.stagger > *:nth-child(4)  { transition-delay: 240ms; }
+.stagger > *:nth-child(5)  { transition-delay: 320ms; }
+.stagger > *:nth-child(6)  { transition-delay: 400ms; }
+.stagger > *:nth-child(7)  { transition-delay: 480ms; }
+.stagger > *:nth-child(8)  { transition-delay: 560ms; }
+
+/* ── Page-load animations (no JS required) ──────────────────── */
+
+.animate-hero-title {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fade-up var(--dur-slower) var(--ease-out) forwards;
+  animation-delay: 100ms;
+}
+
+.animate-hero-body {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: fade-up var(--dur-slower) var(--ease-out) forwards;
+  animation-delay: 200ms;
+}
+
+.animate-hero-actions {
+  opacity: 0;
+  animation: fade-in var(--dur-slower) var(--ease-out) forwards;
+  animation-delay: 360ms;
+}
+
+/* ── Nav blocks stagger (keep backward compat) ──────────────── */
+
+.nav-block:nth-child(1) { --stagger-delay: 80ms; }
+.nav-block:nth-child(2) { --stagger-delay: 160ms; }
+.nav-block:nth-child(3) { --stagger-delay: 240ms; }
+.nav-block:nth-child(4) { --stagger-delay: 320ms; }
+
+.nav-block.anim-ready {
+  transition-delay: var(--stagger-delay, 0ms);
+}

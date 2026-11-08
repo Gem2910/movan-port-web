@@ -1,0 +1,193 @@
+/* ============================================================
+   MOVAN STUDIO — LAYOUT
+   Container, grid system, section spacing
+   ============================================================ */
+
+/* ── Site shell ─────────────────────────────────────────────── */
+
+.site-shell {
+  position: relative;
+  z-index: var(--z-base);
+  width: min(calc(100% - var(--container-pad) * 2), var(--container-max));
+  margin: 0 auto;
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-16);
+}
+
+/* ── Page wrapper ───────────────────────────────────────────── */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
+}
+
+/* ── Section ────────────────────────────────────────────────── */
+
+.section {
+  position: relative;
+}
+
+/* ── Grids ──────────────────────────────────────────────────── */
+
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--space-6);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-5);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-6);
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-5);
+}
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.grid-6 {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+/* ── Span helpers for grid-12 ───────────────────────────────── */
+
+.col-1  { grid-column: span 1; }
+.col-2  { grid-column: span 2; }
+.col-3  { grid-column: span 3; }
+.col-4  { grid-column: span 4; }
+.col-5  { grid-column: span 5; }
+.col-6  { grid-column: span 6; }
+.col-7  { grid-column: span 7; }
+.col-8  { grid-column: span 8; }
+.col-9  { grid-column: span 9; }
+.col-10 { grid-column: span 10; }
+.col-11 { grid-column: span 11; }
+.col-12 { grid-column: span 12; }
+.col-2-12 { grid-column: 2 / 12; }
+.col-3-11 { grid-column: 3 / 11; }
+
+/* ── Section heading block ──────────────────────────────────── */
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 860px;
+}
+
+.section-header .eyebrow {
+  margin-bottom: var(--space-2);
+}
+
+.section-header h1,
+.section-header h2 {
+  margin-bottom: 0;
+}
+
+.section-header .lead {
+  margin: 0;
+}
+
+/* ── Row / Stack helpers ─────────────────────────────────────── */
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+/* ── Divider ─────────────────────────────────────────────────── */
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: var(--color-border);
+}
+
+/* ── Content max-width limiter ───────────────────────────────── */
+
+.content-wrap {
+  max-width: var(--content-max);
+}
+
+/* ── Responsive grid collapse ───────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .site-shell {
+    width: min(calc(100% - 32px), var(--container-max));
+  }
+
+  .grid-12 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-5 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-6 {
+    grid-template-columns: 1fr;
+  }
+
+  [class^="col-"],
+  [class*=" col-"],
+  .col-2-12,
+  .col-3-11 {
+    grid-column: span 1;
+  }
+
+  .flex-between {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

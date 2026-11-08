@@ -1,0 +1,32 @@
+app = "movan-cluster-node2"
+primary_region = "sin"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  TELEGRAM_BOT_MOVAN_TOKEN = "8358639258:AAGpBhuN49dk1kg69qJauEQsjAQ75FCWEZc"
+  TELEGRAM_ADMIN_CHAT_ID = "1085245510"
+  NODE_ID = "movan-cluster-node2"
+  PORT = "3000"
+  CLOUDFLARE_ACCOUNT_ID = "72db34be5b0a99ded448f54e23a748f1"
+  R2_ACCESS_KEY_ID = "d2ab6a30420119e4c61da34a9ee58b04"
+  R2_SECRET_ACCESS_KEY = "4cd47d424b2d2a3755165ce5ad216c11d9cf918b0c2129273de51a0f41bf314d"
+  R2_ENDPOINT = "https://72db34be5b0a99ded448f54e23a748f1.r2.cloudflarestorage.com"
+  SUPABASE_P1_URL = "https://qhuscfkrbqkugtydgivt.supabase.co"
+  SUPABASE_P1_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFodXNjZmtyYnFrdWd0eWRnaXZ0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQzMzY1NzEsImV4cCI6MjA5OTkxMjU3MX0.gCnL0qNqJXt0WY7B2J413vXhdvYjRcgguvmi8eXGh5E"
+  SUPABASE_P1_SERVICE_ROLE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFodXNjZmtyYnFrdWd0eWRnaXZ0Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4NDMzNjU3MSwiZXhwIjoyMDk5OTEyNTcxfQ.XJpm6jDbF11H8Z4U_wqltDyDCgqH5ZxqX6zXNTZ2LaI"
+  MEDIA_SIGNING_SECRET = "cineland_secret_signature_key_2026"
+  VITE_MEDIA_DOMAIN = "media.cineland.id.vn"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 1
+
+[[vm]]
+  memory = "1024mb"
+  cpu_kind = "shared"
+  cpus = 1

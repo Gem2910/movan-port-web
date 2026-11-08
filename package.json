@@ -1,0 +1,10 @@
+{
+  "name": "movan-web",
+  "version": "1.0.0",
+  "description": "Movan Web Server with Supabase Cache (movanweb) & Cloudflare R2 Data Storage (movanweb)",
+  "main": "server.js",
+  "scripts": {
+    "build": "node frontend/build.js",
+    "start": "node server.js"
+  }
+}

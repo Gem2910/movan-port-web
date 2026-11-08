@@ -1,0 +1,25 @@
+/* ============================================================
+   MOVAN STUDIO — STYLES ENTRY POINT
+   Import order matters. Do not reorder.
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap");
+
+@import "./tokens.css";
+@import "./reset.css";
+@import "./base.css";
+@import "./typography.css";
+@import "./layout.css";
+@import "./components.css?v=2";
+@import "./forms.css";
+@import "./motion.css";
+@import "./utilities.css";
+
+/*
+  Page-level CSS (load per-page via <link> in each HTML file):
+  - assets/css/pages/home.css        — index.html
+  - assets/css/pages/shop.css        — shop.html
+  - assets/css/pages/product.css     — product.html
+  - assets/css/pages/case-study.css  — case-study.html
+  - assets/css/pages/blog.css        — blog.html
+*/

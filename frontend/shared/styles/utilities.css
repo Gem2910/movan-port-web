@@ -1,0 +1,38 @@
+/* ============================================================
+   MOVAN STUDIO — UTILITIES
+   Single-purpose helper classes
+   ============================================================ */
+
+/* ── Display ─────────────────────────────────────────────────── */
+.hidden   { display: none !important; }
+.sr-only  {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Spacing ─────────────────────────────────────────────────── */
+.mt-auto { margin-top: auto; }
+.mb-auto { margin-bottom: auto; }
+.ml-auto { margin-left: auto; }
+.mr-auto { margin-right: auto; }
+
+/* ── Colors ──────────────────────────────────────────────────── */
+.text-accent   { color: var(--color-accent-light); }
+.text-muted    { color: var(--color-text-muted); }
+.text-soft     { color: var(--color-text-soft); }
+
+/* ── Border ──────────────────────────────────────────────────── */
+.border-top    { border-top: 1px solid var(--color-border); }
+.border-bottom { border-bottom: 1px solid var(--color-border); }
+
+/* ── Misc ────────────────────────────────────────────────────── */
+.no-pointer    { pointer-events: none; }
+.full-width    { width: 100%; }
+.relative      { position: relative; }

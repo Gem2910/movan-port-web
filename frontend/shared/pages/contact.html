@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#040404">
+  <title>Movan Studio | Lien he - Bat dau du an</title>
+  <meta name="description" content="Lien he Movan Studio de bat dau du an web, AI automation, phan mem hoac tu van. Phan hoi trong 24 gio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/shared/styles/global.css">
+</head>
+<body data-page="contact">
+  <div class="noise"></div>
+  <div class="site-shell">
+    <movan-header active-page="contact"></movan-header>
+    <main class="page" id="main">
+      <section class="section-header" style="padding-top: var(--space-8)">
+        <span class="eyebrow animate-hero-body">Contact</span>
+        <h1 class="animate-hero-title" style="font-size: var(--text-4xl); letter-spacing:-0.03em">Bat dau du an</h1>
+        <p class="lead animate-hero-body">Gui brief ngan ve nhu cau cua ban - Movan se phan hoi trong 24 gio voi huong tiep can cu the, khong can call truoc.</p>
+      </section>
+
+      <section class="section">
+        <div class="grid-2" style="align-items:start; gap: var(--space-8)">
+          <div class="card form-panel animate-hero-body">
+            <form id="inquiry-form" class="inquiry-form" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="contact-name">Ho ten *</label>
+                  <input type="text" id="contact-name" name="name" placeholder="Nguyen Van A" required autocomplete="name">
+                </div>
+                <div class="field">
+                  <label for="contact-email">Email *</label>
+                  <input type="email" id="contact-email" name="email" placeholder="hello@example.com" required autocomplete="email">
+                </div>
+                <div class="field">
+                  <label for="contact-company">Cong ty / Du an</label>
+                  <input type="text" id="contact-company" name="company" placeholder="Ten cong ty hoac du an" autocomplete="organization">
+                </div>
+                <div class="field">
+                  <label for="contact-budget">Ngan sach du kien</label>
+                  <select id="contact-budget" name="budget">
+                    <option value="">Chua xac dinh</option>
+                    <option value="under-10m">Duoi 10 trieu</option>
+                    <option value="10-30m">10 - 30 trieu</option>
+                    <option value="30-100m">30 - 100 trieu</option>
+                    <option value="over-100m">Tren 100 trieu</option>
+                  </select>
+                </div>
+                <div class="field field-full">
+                  <label for="contact-type">Loai nhu cau *</label>
+                  <select id="contact-type" name="type" required>
+                    <option value="">Chon loai nhu cau</option>
+                    <option value="service">Thue dich vu</option>
+                    <option value="collab">Hop tac</option>
+                    <option value="general">Cau hoi chung</option>
+                  </select>
+                </div>
+                <div class="field field-full">
+                  <label for="contact-message">Mo ta du an *</label>
+                  <textarea id="contact-message" name="message" placeholder="Mo ta ngan ve du an, van de can giai quyet va ket qua mong muon..." rows="6" required></textarea>
+                </div>
+              </div>
+
+              <div class="actions" style="margin-top: var(--space-2)">
+                <button type="submit" class="btn btn-accent" id="contact-submit">Gui yeu cau</button>
+              </div>
+              <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <div class="flex-col" style="gap: var(--space-8)">
+            <div>
+              <p class="eyebrow" style="margin-bottom: var(--space-4)">Email</p>
+              <a href="mailto:hello@movan.studio" class="button btn-ghost" style="font-size: var(--text-md); letter-spacing:0.02em; font-family: var(--font-body)">hello@movan.studio</a>
+            </div>
+            <div class="divider"></div>
+            <div>
+              <p class="eyebrow" style="margin-bottom: var(--space-4)">Thoi gian phan hoi</p>
+              <p class="body-sm">Movan phan hoi moi brief trong vong 24 gio trong ngay lam viec. Neu ban can trao doi nhanh, gui email truc tiep.</p>
+            </div>
+            <div class="divider"></div>
+            <div>
+              <p class="eyebrow" style="margin-bottom: var(--space-4)">Du an phu hop nhat</p>
+              <ul class="prose-list">
+                <li>Website & digital experience</li>
+                <li>AI workflow & automation</li>
+                <li>Software & tool tuy chinh</li>
+                <li>Design system & digital identity</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="/shared/components/header.js"></script>
+  <script src="/shared/components/footer.js"></script>
+  <script src="/shared/js/main.js"></script>
+</body>
+</html>
+

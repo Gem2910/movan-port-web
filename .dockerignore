@@ -1,0 +1,7 @@
+.git
+.github
+node_modules
+*.bak
+*.bak-*
+*.log
+r2-cache

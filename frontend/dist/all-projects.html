@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nguyễn Lượng | All Projects</title>
+  <link rel="stylesheet" href="./shared/styles/global.css?v=20261026">
+  <link rel="stylesheet" href="./portfolio.css?v=20261026">
+</head>
+<body data-page="portfolio-v2">
+  <!-- CUSTOM PORTFOLIO HEADER -->
+  <header class="portfolio-header" id="dynamic-header">
+    <div class="v2-container header-inner">
+      <a href="index.html" class="brand-logo">Movan</a>
+      <nav class="portfolio-nav">
+        <a href="index.html#sec-about">About Me</a>
+        <a href="index.html#sec-projects">Project</a>
+        <a href="all-projects.html" class="active">All Projects</a>
+        <a href="index.html#sec-contact">Contact Me</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#" class="lang-btn notranslate">EN</a>
+        <a href="/" class="home-btn">Trang chủ</a>
+      </div>
+    </div>
+  </header>
+    
+  <main id="main" class="portfolio-v2-main" style="padding-top: 50px;">
+    
+    <!-- PROJECTS SECTION -->
+    <section class="section-projects theme-dark" id="sec-projects">
+      <div class="v2-container">
+        <h2 class="section-title"><span>All</span> Projects</h2>
+        <div class="projects-list" id="projects-list">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="portfolio-footer" id="dynamic-footer"><!-- Rendered by JS --></footer>
+
+  <script>
+    // Tell portfolio.js to render all projects instead of slicing
+    window.SHOW_ALL_PROJECTS = true;
+  </script>
+  <script src="./portfolio.js?v=20261026"></script>
+  <script src="./shared/components/ai-widget.js"></script>
+</body>
+</html>

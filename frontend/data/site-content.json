@@ -1,0 +1,784 @@
+{
+  "site": {
+    "brand": "MOVAN STUDIO",
+    "home_url": "/",
+    "contact_url": "/contact",
+    "portfolio_url": "/portfolio",
+    "projects_url": "/projects",
+    "blog_url": "/blog",
+    "phone": "0367 727 740",
+    "email": "hello@movan.studio",
+    "copyright": "© 2026 Movan Studio",
+    "navigation": [
+      {
+        "label": "TRANG CHU",
+        "href": "/",
+        "page": "home"
+      },
+      {
+        "label": "PORTFOLIO",
+        "href": "/portfolio",
+        "page": "portfolio"
+      },
+      {
+        "label": "DU AN",
+        "href": "/projects",
+        "page": "projects"
+      },
+      {
+        "label": "BLOG",
+        "href": "/blog",
+        "page": "blog"
+      },
+      {
+        "label": "LIEN HE",
+        "href": "/contact",
+        "page": "contact"
+      }
+    ],
+    "footer_links": [
+      {
+        "label": "Portfolio",
+        "href": "/portfolio"
+      },
+      {
+        "label": "Du an",
+        "href": "/projects"
+      },
+      {
+        "label": "Blog",
+        "href": "/blog"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
+    ]
+  },
+  "home": {
+    "hero": {
+      "name": "Movan Studio",
+      "title_top": "BUILD. DESIGN.",
+      "title_bottom": "AUTOMATE.",
+      "description": "Movan Studio xay dung website, phan mem, trai nghiem so va he thong tu dong hoa danh cho thuong hieu, doi ngu sang tao va doanh nghiep.",
+      "primary_cta": {
+        "label": "Xem portfolio",
+        "href": "/portfolio"
+      },
+      "secondary_cta": {
+        "label": "Xem du an",
+        "href": "/projects"
+      }
+    },
+    "capabilities": [
+      {
+        "number": "01",
+        "title": "Graphic Design",
+        "description": "Thiet ke an pham truyen thong, hinh anh sac net va sang tao giup thuong hieu noi bat."
+      },
+      {
+        "number": "02",
+        "title": "UX/UI Design",
+        "description": "Toi uu hoa trai nghiem nguoi dung va thiet ke giao dien truc quan, de su dung."
+      },
+      {
+        "number": "03",
+        "title": "Video Editor",
+        "description": "Cat ghep, chinh sua va tao ra cac video chuyen dong muot ma, thu hut nguoi xem."
+      },
+      {
+        "number": "04",
+        "title": "Photographer",
+        "description": "Bat tron khoanh khac va tao ra nhung bo anh chuyen nghiep mang dam dau an rieng."
+      },
+      {
+        "number": "05",
+        "title": "Brand Strategy",
+        "description": "Dinh vi va thiet ke thong diep thuong hieu sac net de ket noi sau voi khach hang."
+      }
+    ],
+    "selected_work": {
+      "eyebrow": "Selected Work",
+      "title": "Du an noi bat",
+      "cta": {
+        "label": "Xem tat ca ->",
+        "href": "/projects"
+      },
+      "projects": [
+        {
+          "slug": "p1",
+          "title": "DOGCARD TCG Pocket",
+          "type": "Game Design",
+          "description": "Thiết kế ấn phẩm truyền thông và giao diện cho game thẻ bài DOGCARD TCG Pocket.",
+          "image": "/Media/images/projects/Dogcad/Chest 4 (2).webp",
+          "link": "/projects"
+        },
+        {
+          "slug": "p2",
+          "title": "SIÊU PHIM QUỐC GIA A80",
+          "type": "Event Design",
+          "description": "Ghi dấu 80 năm Quốc Khánh. Phim được thực hiện bởi những kẻ đam mê khung hình và lòng tự hào dân tộc.",
+          "image": "/Media/images/projects/A80/a80_1.webp",
+          "link": "/projects"
+        },
+        {
+          "slug": "p3",
+          "title": "WESTWORLD",
+          "type": "Game Design",
+          "description": "Thiết kế đồ hoạ Pixel Art, bối cảnh và sơ đồ quy trình cho tựa game Westworld.",
+          "image": "/Media/images/projects/Ww/ww_1.webp",
+          "link": "/projects"
+        },
+        {
+          "slug": "p4",
+          "title": "WALLFLOWER",
+          "type": "Brand Identity",
+          "description": "Thiết kế bộ nhận diện thương hiệu Wallflower, mang phong cách nhẹ nhàng, tinh tế và hướng nội.",
+          "image": "/Media/images/projects/wallflower/wallflower_1.webp",
+          "link": "/projects"
+        },
+        {
+          "slug": "p5",
+          "title": "FARELLO",
+          "type": "Catalogue Design",
+          "description": "Thiết kế Catalogue cho thương hiệu kính mắt Farello, thể hiện sự chuyên nghiệp, hiện đại và làm nổi bật các dòng sản phẩm cao cấp.",
+          "image": "/Media/images/projects/Farello/farello_cover.webp",
+          "link": "/projects"
+        },
+        {
+          "slug": "p6",
+          "title": "Hội sinh viên Bắc Giang tại Thái Nguyên",
+          "type": "Portfolio",
+          "description": "Chương trình đông ấm áp - xuân yêu thương năm 2024",
+          "image": "/Media/images/projects/BSA/2c7791202771737.668c00f0a0c5a.webp",
+          "link": "/projects"
+        }
+      ]
+    },
+    "process": {
+      "eyebrow": "Quy trinh",
+      "title": "Lam viec the nao?",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Research & Strategy",
+          "description": "Nghien cuu thi truong va dinh hinh chien luoc thuong hieu cot loi."
+        },
+        {
+          "number": "02",
+          "title": "Concept & Ideas",
+          "description": "Len y tuong sang tao, moodboard va phac thao cac concept thiet ke."
+        },
+        {
+          "number": "03",
+          "title": "Visual & UX/UI",
+          "description": "Thiet ke chi tiet do hoa, giao dien nguoi dung va trai nghiem tuong tac."
+        },
+        {
+          "number": "04",
+          "title": "Production",
+          "description": "Thuc thi san xuat: chup anh, quay dung video va hoan thien an pham."
+        },
+        {
+          "number": "05",
+          "title": "Delivery",
+          "description": "Ban giao toan bo tai san so, source file va huong dan van hanh."
+        }
+      ]
+    }
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "DICH VU",
+    "description": "Movan Studio nhan cac du an can su ket hop giua thiet ke va ky thuat - tu website den he thong tu dong hoa va phan mem tuy chinh.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Graphic Design",
+        "description": "Thiet ke an pham truyen thong, hinh anh sac net va sang tao giup thuong hieu noi bat.",
+        "bullets": [
+          "Cover Page & Banner",
+          "Logo & Identity Design",
+          "Social Media Template",
+          "Poster & Print Material"
+        ]
+      },
+      {
+        "number": "02",
+        "title": "UX/UI Design",
+        "description": "Toi uu hoa trai nghiem nguoi dung va thiet ke giao dien truc quan, de su dung.",
+        "bullets": [
+          "Website & Landing Page",
+          "Mobile App Interface",
+          "SaaS & Dashboard UI",
+          "Wireframe & Prototyping"
+        ]
+      },
+      {
+        "number": "03",
+        "title": "Video Editor",
+        "description": "Cat ghep, chinh sua va tao ra cac video chuyen dong muot ma, thu hut nguoi xem.",
+        "bullets": [
+          "Promo & Trailer Video",
+          "TikTok, Reels & Shorts",
+          "Corporate & Event Video",
+          "Vlog & YouTube Content"
+        ]
+      },
+      {
+        "number": "04",
+        "title": "Photographer",
+        "description": "Bat tron khoanh khac va tao ra nhung bo anh chuyen nghiep mang dam dau an rieng.",
+        "bullets": [
+          "Product Photography",
+          "Portrait & Lookbook",
+          "Event & Lifestyle",
+          "Architecture & Interior"
+        ]
+      },
+      {
+        "number": "05",
+        "title": "Brand Strategy",
+        "description": "Dinh vi va thiet ke thong diep thuong hieu sac net de ket noi sau voi khach hang.",
+        "bullets": [
+          "Brand Positioning",
+          "Target Audience Analysis",
+          "Brand Voice & Guidelines",
+          "Marketing Strategy"
+        ]
+      }
+    ]
+  },
+  "blog": {
+    "eyebrow": "Insights",
+    "title": "BLOG",
+    "description": "Noi dung ve thiet ke web, cong nghe, AI workflow va chien luoc van hanh he thong so. Khong co content marketing gia tao.",
+    "categories": [
+      {
+        "slug": "all",
+        "label": "Tat ca"
+      },
+      {
+        "slug": "design",
+        "label": "Design"
+      },
+      {
+        "slug": "technology",
+        "label": "Technology"
+      },
+      {
+        "slug": "ai",
+        "label": "AI"
+      }
+    ],
+    "posts": [
+      {
+        "category": "design",
+        "badge": "Design",
+        "meta": "05/08/2026 · 6 phut doc",
+        "title": "Website ca nhan nen co gi de trinh bay nang luc ro rang?",
+        "excerpt": "Cau truc gom trang chu, portfolio, du an va blog giup nguoi xem hieu ban nhanh hon va de lien he hon.",
+        "link": "#"
+      },
+      {
+        "category": "ai",
+        "badge": "AI",
+        "meta": "01/08/2026 · 8 phut doc",
+        "title": "Blog giup personal brand tang lead the nao?",
+        "excerpt": "Viet noi dung dung insight, ket hop SEO co ban va dan ve offer lien quan ma khong can dang bai moi ngay.",
+        "link": "#"
+      }
+    ]
+  },
+  "portfolio": {
+    "hero": {
+      "title_top": "movan studio",
+      "title_bottom": "Portfolio",
+      "year": "2026",
+      "brand": "Nguyễn Tất Lượng",
+      "subbrand": "",
+      "monogram": "A"
+    },
+    "cv": {
+      "name": "Nguyễn Tất Lượng",
+      "role": "Graphic Designer",
+      "location": "Việt Nam.",
+      "dob": "03/12/2002",
+      "phone": "0367727740",
+      "email": "nguyentatluong2910@gmail.com",
+      "behance": "behance.net/lngnguyntt1",
+      "facebook": "https://www.facebook.com/NguyenTatLuonh/",
+      "instagram": "https://www.instagram.com/nathan.laurens/",
+      "behance_url": "https://www.behance.net/lngnguyntt1",
+      "discord": "https://discord.com/users/574966064761274389",
+      "contact_heading": "Let's talk for Something special",
+      "contact_sub": "Tôi luôn mong muốn vượt qua mọi giới hạn của sự sáng tạo và công nghệ để mang lại những trải nghiệm tuyệt vời nhất.",
+      "intro": "Xin chào, tôi là Lượng – Graphic Designer, Videographer và IT Specialist, với hơn 4 năm kinh nghiệm trong cả ba lĩnh vực. Tôi tập trung vào thiết kế truyền thông, sản xuất nội dung hình ảnh – video và ứng dụng công nghệ nhằm tạo ra những sản phẩm chỉn chu, trực quan và phù hợp với mục tiêu thương hiệu.",
+      "intro2": "Xin chào, tôi là Lượng – Graphic Designer, Videographer và IT Specialist với hơn 4 năm kinh nghiệm. Tôi tập trung vào thiết kế truyền thông, sản xuất nội dung hình ảnh, video và ứng dụng công nghệ để tạo ra những sản phẩm chỉn chu, phù hợp với mục tiêu thương hiệu. Trong quá trình làm việc freelance, tôi có cơ hội trực tiếp trao đổi, tư vấn và triển khai nhiều yêu cầu thực tế từ khách hàng. Tôi luôn chủ động cập nhật xu hướng và công cụ mới, đồng thời tiếp tục phát triển chuyên sâu về Marketing Design, Video, 3D và AI để nâng cao chất lượng sáng tạo và tối ưu quy trình làm việc.",
+      "education": {
+        "year": "2020 - 2025",
+        "school": "ĐẠI HỌC KỸ THUẬT CÔNG NGHIỆP - ĐẠI HỌC THÁI NGUYÊN",
+        "courses": [
+          "Graphic Suite",
+          "Thiết kế và Lập trình Website",
+          "Thiết kế máy, 3d",
+          "Thiết kế và lập trình cnc"
+        ]
+      },
+      "skills": [
+        "Identity Design",
+        "Video Editing",
+        "Typography",
+        "Problem-solving",
+        "Event",
+        "2D Design",
+        "Photography",
+        "Information Technology",
+        "Videography",
+        "Office Software",
+        "Teamwork"
+      ],
+      "software": [
+        {
+          "name": "Photoshop",
+          "class": "photoshop",
+          "icon": "/Media/icons/photoshop-plain.svg"
+        },
+        {
+          "name": "Illustrator",
+          "class": "illustrator",
+          "icon": "/Media/icons/illustrator-plain.svg"
+        },
+        {
+          "name": "Indesign",
+          "class": "indesign",
+          "icon": "/Media/icons/adobeindesign.svg"
+        },
+        {
+          "name": "Premiere",
+          "class": "premiere",
+          "icon": "/Media/icons/premierepro-plain.svg"
+        },
+        {
+          "name": "After Effects",
+          "class": "after_effects",
+          "icon": "/Media/icons/aftereffects-plain.svg"
+        },
+        {
+          "name": "HTML",
+          "class": "html5",
+          "icon": "/Media/icons/html5-original.svg"
+        },
+        {
+          "name": "Java",
+          "class": "java",
+          "icon": "/Media/icons/java-original.svg"
+        },
+        {
+          "name": "Canva",
+          "class": "canva",
+          "icon": "/Media/icons/canva-original.svg"
+        },
+        {
+          "name": "ChatGPT",
+          "class": "chatgpt",
+          "icon": "/Media/icons/openai.svg"
+        },
+        {
+          "name": "CapCut",
+          "class": "capcut",
+          "icon": "/Media/icons/512x512bb.webp"
+        }
+      ],
+      "experiences": [
+        {
+          "company": "Cineland",
+          "period": "06/2026 - nay",
+          "tasks": [
+            "Xây dựng hệ thống Web và phụ trách các vấn đề IT.",
+            "Xử lý hậu kỳ, đảm bảo chất lượng hình ảnh và âm thanh cho sản phẩm.",
+            "Phụ trách set up kỹ thuật liên quan đến máy quay, ánh sáng và thiết bị tại hiện trường."
+          ]
+        },
+        {
+          "company": "CTV Trung tâm chăm sóc sắc đẹp NTH Skinlab",
+          "period": "09/2025 - 06/2026",
+          "tasks": [
+            "Lên ý tưởng và thiết kế các sản phẩm đồ họa theo yêu cầu của Idea Creator (mảng POD).",
+            "Thiết kế đa dạng các ấn phẩm Marketing (banner, hình ảnh mạng xã hội, poster...) nhằm thúc đẩy chiến dịch quảng cáo và quảng bá thương hiệu."
+          ]
+        },
+        {
+          "company": "Teakmedia",
+          "period": "08/2024 - 06/2026",
+          "tasks": [
+            "Lên ý tưởng kịch bản sáng tạo cho các dự án truyền thông.",
+            "Trực tiếp tham gia vào quá trình quay phim và chụp ảnh sản phẩm/dự án.",
+            "Hướng dẫn và đào tạo nhân sự mới về kỹ năng quay chụp cũng như tư duy hình ảnh."
+          ]
+        },
+        {
+          "company": "Sunny Media",
+          "period": "12/2022 - 07/2023",
+          "tasks": [
+            "Đảm nhiệm vai trò Video Editor, chuyên cắt ghép và chỉnh sửa hậu kỳ video.",
+            "Tham gia sáng tạo nội dung, lên ý tưởng và viết kịch bản chi tiết.",
+            "Thiết kế hình ảnh thu nhỏ (Thumbnail) bắt mắt để tăng tỷ lệ tương tác và thu hút người xem trên các nền tảng mạng xã hội."
+          ]
+        },
+        {
+          "company": "Freelancer Design",
+          "period": "08/2022 - nay",
+          "tasks": [
+            "Sáng tạo ý tưởng và thiết kế Key Visual cùng các ấn phẩm truyền thông liên quan cho nhiều đối tác.",
+            "Thiết kế Logo, hệ thống bộ nhận diện thương hiệu, tờ rơi, banner, giao diện Landing Page và Social post.",
+            "Hỗ trợ chỉnh sửa và dựng video cơ bản phục vụ nhu cầu quảng bá đa nền tảng của khách hàng."
+          ]
+        }
+      ],
+      "hero_image": "/Media/images/hero-illustration.webp",
+      "avatar": "/r2/file/uploads%2F1792163429563-492ei0.JPG"
+    },
+    "categories": [
+      {
+        "id": "social-post",
+        "label": "Social Post"
+      },
+      {
+        "id": "truyen-thong",
+        "label": "Truyền thông nội bộ"
+      },
+      {
+        "id": "fb",
+        "label": "Food & Beverage"
+      },
+      {
+        "id": "printing",
+        "label": "Printing"
+      },
+      {
+        "id": "event",
+        "label": "Event"
+      },
+      {
+        "id": "branding",
+        "label": "Branding"
+      }
+    ],
+    "projects": [
+      {
+        "id": "p1",
+        "category": "Game Design",
+        "name": "DOGCARD TCG Pocket",
+        "client": "DOGCARD",
+        "image": "/Media/images/projects/Dogcad/Chest 4 (2).webp",
+        "gallery": [
+          "/Media/images/projects/Dogcad/Chest 4 (2).webp",
+          "/Media/images/projects/Dogcad/Doggo Shelter (1).webp",
+          "/Media/images/projects/Dogcad/Doggo Shelter (3).webp",
+          "/Media/images/projects/Dogcad/Evolve Doggos_ Level (2).webp",
+          "/Media/images/projects/Dogcad/How to earn2 (2).webp",
+          "/Media/images/projects/Dogcad/Open Doggo Chest (2).webp",
+          "/Media/images/projects/Dogcad/What is Dog Card (2).webp",
+          "/Media/images/projects/Dogcad/Whitelist open _ 3 days left (2).webp",
+          "/Media/images/projects/Dogcad/alert.webp",
+          "/Media/images/projects/Dogcad/card.webp",
+          "/Media/images/projects/Dogcad/how to earn (2).webp",
+          "/Media/images/projects/Dogcad/in game (2).webp",
+          "/Media/images/projects/Dogcad/introduction (2).webp",
+          "/Media/images/projects/Dogcad/market so nuke (1).webp",
+          "/Media/images/projects/Dogcad/whitelist (2).webp",
+          "/Media/images/projects/Dogcad/whitelist open now (2).webp"
+        ],
+        "description": "Thiết kế ấn phẩm truyền thông và giao diện cho game thẻ bài DOGCARD TCG Pocket."
+      },
+      {
+        "id": "p2",
+        "category": "Event Design",
+        "name": "SIÊU PHIM QUỐC GIA A80",
+        "client": "A80",
+        "image": "/Media/images/projects/A80/a80_1.webp",
+        "gallery": [
+          "/Media/images/projects/A80/a80_1.webp",
+          "/Media/images/projects/A80/a80_3.webp",
+          "/Media/images/projects/A80/a80_4.webp",
+          "/Media/images/projects/A80/a80_video.mp4",
+          "/Media/images/projects/A80/a80_2.webp"
+        ],
+        "description": "Ghi dấu 80 năm Quốc Khánh. Phim được thực hiện bởi những kẻ đam mê khung hình và lòng tự hào dân tộc."
+      },
+      {
+        "id": "p3",
+        "category": "Game Design",
+        "name": "WESTWORLD",
+        "client": "WESTWORLD",
+        "image": "/Media/images/projects/Ww/ww_1.webp",
+        "gallery": [
+          "/Media/images/projects/Ww/Ww_finaly.mp4",
+          "/Media/images/projects/Ww/ww_1.webp",
+          "/Media/images/projects/Ww/ww_2.webp",
+          "/Media/images/projects/Ww/ww_3.webp",
+          "/Media/images/projects/Ww/ww_4.webp",
+          "/Media/images/projects/Ww/ww_5.webp"
+        ],
+        "description": "Thiết kế đồ hoạ Pixel Art, bối cảnh và sơ đồ quy trình cho tựa game Westworld."
+      },
+      {
+        "id": "p4",
+        "name": "WALLFLOWER",
+        "client": "Wallflower",
+        "category": "Brand Identity",
+        "description": "Thiết kế bộ nhận diện thương hiệu Wallflower, mang phong cách nhẹ nhàng, tinh tế và hướng nội.",
+        "gallery": [
+          "/Media/images/projects/wallflower/wallflower_1.webp",
+          "/Media/images/projects/wallflower/wallflower_2.webp",
+          "/Media/images/projects/wallflower/wallflower_3.webp",
+          "/Media/images/projects/wallflower/wallflower_4.webp",
+          "/Media/images/projects/wallflower/wallflower_5.webp",
+          "/Media/images/projects/wallflower/wallflower_6.webp"
+        ],
+        "image": "/Media/images/projects/wallflower/wallflower_1.webp"
+      },
+      {
+        "id": "p5",
+        "name": "FARELLO",
+        "client": "Farello",
+        "category": "Catalogue Design",
+        "description": "Thiết kế Catalogue cho thương hiệu kính mắt Farello, thể hiện sự chuyên nghiệp, hiện đại và làm nổi bật các dòng sản phẩm cao cấp.",
+        "gallery": [
+          "/Media/images/projects/Farello/farello_cover.webp",
+          "/Media/images/projects/Farello/farello_logo.webp",
+          "/Media/images/projects/Farello/farello_mucluc.webp",
+          "/Media/images/projects/Farello/farello_price.webp",
+          "/Media/images/projects/Farello/farello_quote.webp"
+        ],
+        "image": "/Media/images/projects/Farello/farello_cover.webp"
+      },
+      {
+        "id": "p6",
+        "category": "Portfolio",
+        "name": "Hội sinh viên Bắc Giang tại Thái Nguyên",
+        "client": "Hội sinh viên Bắc Giang tại Thái Nguyên",
+        "description": "Chương trình đông ấm áp - xuân yêu thương năm 2024",
+        "gallery": [
+          "/Media/images/projects/BSA/2c7791202771737.668c00f0a0c5a.webp",
+          "/Media/images/projects/BSA/3a834a202771737.668c00f0a171b.webp",
+          "/Media/images/projects/BSA/7ca6c3202771737.668c00f0a1ab1.webp",
+          "/Media/images/projects/BSA/9b1d4f202771737.668c00f09fa5d.webp",
+          "/Media/images/projects/BSA/a37d96202771737.668c00f0a014c.webp"
+        ],
+        "image": "/Media/images/projects/BSA/2c7791202771737.668c00f0a0c5a.webp"
+      },
+      {
+        "id": "p7",
+        "category": "Catalog",
+        "name": "GIới thiệu doanh nghiệp",
+        "client": "CTY Tân Đại Dương",
+        "description": "Dự án Cty XNK",
+        "gallery": [
+          "/Media/images/projects/Cty XNK/Artboard 12 copy 2.webp",
+          "/Media/images/projects/Cty XNK/Artboard 12 copy 2_1.webp",
+          "/Media/images/projects/Cty XNK/Artboard 12 copy 2_2.webp",
+          "/Media/images/projects/Cty XNK/Artboard 12 copy 3.webp",
+          "/Media/images/projects/Cty XNK/Artboard 12 copy 4.webp",
+          "/Media/images/projects/Cty XNK/Artboard 12 copy 5.webp",
+          "/Media/images/projects/Cty XNK/Artboard 12 copy 6.webp",
+          "/Media/images/projects/Cty XNK/Artboard 12 copy 7.webp",
+          "/Media/images/projects/Cty XNK/Artboard 12 copy.webp",
+          "/Media/images/projects/Cty XNK/Artboard 12 copy_1.webp",
+          "/Media/images/projects/Cty XNK/Artboard 12.webp",
+          "/Media/images/projects/Cty XNK/Artboard 12_1.webp"
+        ],
+        "image": "/Media/images/projects/Cty XNK/Artboard 12 copy 2.webp"
+      },
+      {
+        "id": "p8",
+        "category": "Portfolio",
+        "name": "DREAM FARM",
+        "client": "Dream farm",
+        "description": "Dự án Dream farm",
+        "gallery": [
+          "/Media/images/projects/Dream farm/1. biển ngoài cổng.webp",
+          "/Media/images/projects/Dream farm/10. hồ mắt đen.webp",
+          "/Media/images/projects/Dream farm/11. lầu vọng cảnh.webp",
+          "/Media/images/projects/Dream farm/13. biển phân khu lô đất vực.webp",
+          "/Media/images/projects/Dream farm/14. biển cây.webp",
+          "/Media/images/projects/Dream farm/15. van tưới sầu_page1.webp",
+          "/Media/images/projects/Dream farm/15. van tưới sầu_page2.webp",
+          "/Media/images/projects/Dream farm/16. van tưới cau.webp",
+          "/Media/images/projects/Dream farm/17. đầu phun thuốc.webp",
+          "/Media/images/projects/Dream farm/2. biển trong vườn 300x180.webp",
+          "/Media/images/projects/Dream farm/3. biển vứt rác.webp",
+          "/Media/images/projects/Dream farm/4. khu vực BVTV.webp",
+          "/Media/images/projects/Dream farm/5. biển hố sâu nguy hiểm.webp",
+          "/Media/images/projects/Dream farm/6. nhà điều hành.webp",
+          "/Media/images/projects/Dream farm/7. nhà nhân viên.webp",
+          "/Media/images/projects/Dream farm/8. nhà kho.webp",
+          "/Media/images/projects/Dream farm/9. khu vực pha thuốc.webp"
+        ],
+        "image": "/Media/images/projects/Dream farm/1. biển ngoài cổng.webp"
+      },
+      {
+        "id": "p9",
+        "category": "Portfolio",
+        "name": "NTH SKIN",
+        "client": "NTH skin",
+        "description": "Dự án NTH skin",
+        "gallery": [
+          "/Media/images/projects/NTH skin/1.webp",
+          "/Media/images/projects/NTH skin/10.webp",
+          "/Media/images/projects/NTH skin/11.webp",
+          "/Media/images/projects/NTH skin/12.webp",
+          "/Media/images/projects/NTH skin/13.webp",
+          "/Media/images/projects/NTH skin/14.webp",
+          "/Media/images/projects/NTH skin/15.webp",
+          "/Media/images/projects/NTH skin/16.webp",
+          "/Media/images/projects/NTH skin/17.webp",
+          "/Media/images/projects/NTH skin/18.webp",
+          "/Media/images/projects/NTH skin/19.webp",
+          "/Media/images/projects/NTH skin/2.webp",
+          "/Media/images/projects/NTH skin/20.webp",
+          "/Media/images/projects/NTH skin/21.webp",
+          "/Media/images/projects/NTH skin/22.webp",
+          "/Media/images/projects/NTH skin/23.webp",
+          "/Media/images/projects/NTH skin/24.webp",
+          "/Media/images/projects/NTH skin/25.webp",
+          "/Media/images/projects/NTH skin/26.webp",
+          "/Media/images/projects/NTH skin/27.webp",
+          "/Media/images/projects/NTH skin/28.webp",
+          "/Media/images/projects/NTH skin/29.webp",
+          "/Media/images/projects/NTH skin/3.webp",
+          "/Media/images/projects/NTH skin/30.webp",
+          "/Media/images/projects/NTH skin/31.webp",
+          "/Media/images/projects/NTH skin/32.webp",
+          "/Media/images/projects/NTH skin/33.webp",
+          "/Media/images/projects/NTH skin/4.webp",
+          "/Media/images/projects/NTH skin/5.webp",
+          "/Media/images/projects/NTH skin/6.webp",
+          "/Media/images/projects/NTH skin/7.webp",
+          "/Media/images/projects/NTH skin/8.webp",
+          "/Media/images/projects/NTH skin/9.webp"
+        ],
+        "image": "/Media/images/projects/NTH skin/1.webp"
+      },
+      {
+        "id": "p10",
+        "category": "Portfolio",
+        "name": "NHA KHOA",
+        "client": "Nha khoa",
+        "description": "Dự án Nha khoa",
+        "gallery": [
+          "/Media/images/projects/Nha khoa/b@2x.webp",
+          "/Media/images/projects/Nha khoa/bìa.webp",
+          "/Media/images/projects/Nha khoa/c@2x.webp",
+          "/Media/images/projects/Nha khoa/d@2x.webp",
+          "/Media/images/projects/Nha khoa/e@2x.webp",
+          "/Media/images/projects/Nha khoa/f@2x.webp",
+          "/Media/images/projects/Nha khoa/g@2x.webp",
+          "/Media/images/projects/Nha khoa/h@2x.webp",
+          "/Media/images/projects/Nha khoa/i@2x.webp",
+          "/Media/images/projects/Nha khoa/k@2x.webp",
+          "/Media/images/projects/Nha khoa/l@2x.webp",
+          "/Media/images/projects/Nha khoa/m@2x.webp",
+          "/Media/images/projects/Nha khoa/n@2x.webp",
+          "/Media/images/projects/Nha khoa/x@2x.webp"
+        ],
+        "image": "/Media/images/projects/Nha khoa/b@2x.webp"
+      },
+      {
+        "id": "p11",
+        "category": "Portfolio",
+        "name": "PETRO",
+        "client": "petro",
+        "description": "Dự án petro",
+        "gallery": [
+          "/Media/images/projects/petro/key visual.webp",
+          "/Media/images/projects/petro/thư mời 2-03.webp",
+          "/Media/images/projects/petro/thư mời online 3_page1.webp",
+          "/Media/images/projects/petro/thư mời online 3_page2.webp"
+        ],
+        "image": "/Media/images/projects/petro/key visual.webp"
+      },
+      {
+        "id": "p12",
+        "category": "Portfolio",
+        "name": "SOYA GARDEN",
+        "client": "soya garden",
+        "description": "Dự án soya garden",
+        "gallery": [
+          "/Media/images/projects/soya garden/MENU cafe_in.webp",
+          "/Media/images/projects/soya garden/khaitruong_in.webp",
+          "/Media/images/projects/soya garden/poster bánh 19k.webp",
+          "/Media/images/projects/soya garden/poster facebook.webp",
+          "/Media/images/projects/soya garden/standee.webp",
+          "/Media/images/projects/soya garden/standy 15x21cm.webp",
+          "/Media/images/projects/soya garden/voucher_in.webp"
+        ],
+        "image": "/Media/images/projects/soya garden/MENU cafe_in.webp"
+      },
+      {
+        "id": "p13",
+        "category": "Portfolio",
+        "name": "Portfolio Media",
+        "client": "A Thắng",
+        "description": " Service Package Photography",
+        "gallery": [
+          "/r2/file/movanweb%2Fuploads%2F1793095534095-io7rts.png"
+        ],
+        "image": "/r2/file/movanweb%2Fuploads%2F1793094072357-o3l65y.png"
+      }
+    ]
+  },
+  "header": {
+    "logo": "Movan",
+    "nav": [
+      {
+        "label": "About Me",
+        "href": "#sec-about"
+      },
+      {
+        "label": "Project",
+        "href": "#sec-projects"
+      },
+      {
+        "label": "All Projects",
+        "href": "all-projects.html"
+      },
+      {
+        "label": "Contact Me",
+        "href": "#sec-contact"
+      }
+    ],
+    "home_link": "https://movan.id.vn"
+  },
+  "testimonials": [
+    {
+      "avatar": "MA",
+      "quote": "Lượng thiết kế rất đẹp và sáng tạo. Làm việc vô cùng chuyên nghiệp, chắc chắn sẽ tiếp tục hợp tác!",
+      "name": "Nguyễn Mai Anh"
+    },
+    {
+      "avatar": "MĐ",
+      "quote": "Bàn giao dự án đúng hạn, chất lượng hình ảnh và video vượt ngoài mong đợi. Rất hài lòng với cách làm việc!",
+      "name": "Trần Minh Đức"
+    },
+    {
+      "avatar": "HM",
+      "quote": "Luôn hỗ trợ nhiệt tình và đưa ra những giải pháp thiết kế tối ưu nhất cho sản phẩm. Rất ưng ý!",
+      "name": "Lê Hà My"
+    }
+  ],
+  "footer": {
+    "brand": "Movan",
+    "tagline": "Không ngừng sáng tạo và theo đuổi sự hoàn hảo trong từng điểm chạm thiết kế.",
+    "email": "nguyentatluong2910@gmail.com",
+    "phone": "0367727740",
+    "address": "Việt Nam",
+    "facebook": "https://www.facebook.com/NguyenTatLuonh/",
+    "instagram": "https://www.instagram.com/nathan.laurens/",
+    "behance": "https://www.behance.net/lngnguyntt1",
+    "discord": "https://discord.com/users/574966064761274389",
+    "bottom_brand": "Movan",
+    "copyright": "© 2026 Made with ❤️"
+  }
+}
