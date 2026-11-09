@@ -3,3 +3,4 @@ node_modules/
 *.log
 r2-cache/
 .DS_Store
+.wrangler/

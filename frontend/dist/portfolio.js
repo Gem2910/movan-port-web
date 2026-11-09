@@ -448,15 +448,16 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const resolveSiteContent = () =>
-    window.movanContent?.loadSiteContent
-      ? window.movanContent.loadSiteContent()
-      : fetch("/api/portfolio", { headers: { Accept: "application/json" } })
-          .then((res) => (res.ok ? res.json() : fetch("./data/site-content.json", { headers: { Accept: "application/json" } }).then(r => r.json())))
-          .catch(() =>
-            fetch("./data/site-content.json", { headers: { Accept: "application/json" } })
-              .then((response) => (response.ok ? response.json() : {}))
-              .catch(() => ({}))
-          );
+    fetch("/api/portfolio?t=" + Date.now(), { headers: { Accept: "application/json" } })
+      .then((res) => {
+        if (!res.ok) throw new Error("API response not ok");
+        return res.json();
+      })
+      .catch(() =>
+        fetch("./data/site-content.json?v=" + Date.now(), { headers: { Accept: "application/json" } })
+          .then((response) => (response.ok ? response.json() : {}))
+          .catch(() => ({}))
+      );
 
   resolveSiteContent()
     .then((content) => bootstrap(content))
