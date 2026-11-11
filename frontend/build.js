@@ -50,9 +50,10 @@ const distBackendDir = path.join(DIST_DIR, 'backend');
 const BACKEND_DIR = path.join(__dirname, '..', 'backend');
 if (fs.existsSync(BACKEND_DIR)) {
   fs.mkdirSync(distBackendDir, { recursive: true });
-  if (fs.existsSync(path.join(BACKEND_DIR, 'index.html'))) {
-    fs.copyFileSync(path.join(BACKEND_DIR, 'index.html'), path.join(distBackendDir, 'index.html'));
-    console.log('✅ Copied backend/index.html to /dist/backend/index.html');
+  const redirectFile = path.join(__dirname, 'public-redirect.html');
+  if (fs.existsSync(redirectFile)) {
+    fs.copyFileSync(redirectFile, path.join(distBackendDir, 'index.html'));
+    console.log('🔒 Security: Replaced /dist/backend/index.html with safe redirect');
   }
   const backendDataDir = path.join(BACKEND_DIR, 'data');
   if (fs.existsSync(backendDataDir)) {
